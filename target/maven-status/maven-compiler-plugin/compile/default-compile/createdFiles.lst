@@ -1,5 +1,9 @@
+com\Utils\ExcelReader.class
+com\Pages\LogoutPage.class
+com\Factory\DriverFactory.class
+com\Pages\LoginPage.class
+com\Utils\Waits.class
 com\Utils\Util.class
 com\Pages\HomePage.class
 com\Utils\ConfigReader.class
-com\Factory\DriverFactory.class
-com\Pages\LoginPage.class
+com\Pages\NewCustomerPage.class

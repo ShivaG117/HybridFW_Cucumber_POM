@@ -1,4 +1,35 @@
 -------------------------------------------------------------------------------
 Test set: runners.MyTestRunner
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.55 s -- in runners.MyTestRunner
+Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 70.40 s <<< FAILURE! -- in runners.MyTestRunner
+Verification of the logout functionality.Verify the applicatio behaviour when user clicks on logout link -- Time elapsed: 24.28 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: //*[text()='Log out'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50445}, goog:processID: 8144, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50445/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e0ec8f6ca942a1168c56654f7b9d5038
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.Utils.Waits.waitForClickable(Waits.java:32)
+	at com.Pages.HomePage.clickLogout(HomePage.java:104)
+	at com.Pages.LogoutPage.Logout(LogoutPage.java:15)
+	at stepDefinations.LogoutSteps.user_clicks_on_logout_link(LogoutSteps.java:15)
+	at ✽.user clicks on logout link(file:///C:/Users/admin/eclipse-workspace/HybridFW_Cucumber_POM/src/test/resources/features/Logout.feature:5)
+
+Verify the new customer registration.verification of New Customer Page with valid details -- Time elapsed: 24.27 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: //*[text()='New Customer'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50498}, goog:processID: 14668, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50498/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9eb5f66b7d8e2a910fac61e5ed16e789
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.Utils.Waits.waitForClickable(Waits.java:32)
+	at com.Pages.HomePage.clickNewCustomer(HomePage.java:64)
+	at stepDefinations.RegisterNewcustomerSteps.when_user_is_on_new_customer_page(RegisterNewcustomerSteps.java:23)
+	at ✽.when user is on New Customer Page(file:///C:/Users/admin/eclipse-workspace/HybridFW_Cucumber_POM/src/test/resources/features/RegisterNewCustomer.feature:4)
+
